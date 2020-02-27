@@ -22,3 +22,10 @@ class Food:
     def __init__(self, location, nutrition):
         self.location = location
         self.nutrition = nutrition
+
+class FoodProducer: # class that creates food each day
+    def __init__(self):
+        pass
+
+    def spawnFood(self, quantity): # creates food
+        for i in range(quantity):
