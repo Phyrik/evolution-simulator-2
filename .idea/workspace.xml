@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d179e3cb-cdb0-4485-8919-cc2d1038c8ad" name="Default Changelist" comment="Ma">
+    <list default="true" id="d179e3cb-cdb0-4485-8919-cc2d1038c8ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evolution2.py" beforeDir="false" afterPath="$PROJECT_DIR$/evolution2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui2.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui2.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path=".idea/" />
@@ -31,16 +28,16 @@
         <counts>
           <entry key="css" value="2" />
           <entry key="gitignore" value="6" />
-          <entry key="html" value="2" />
-          <entry key="md" value="3" />
+          <entry key="html" value="3" />
+          <entry key="md" value="4" />
           <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="2" />
-          <entry key="Markdown" value="3" />
+          <entry key="HTML" value="3" />
+          <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Python" value="3" />
         </counts>
@@ -49,18 +46,18 @@
         <counts>
           <entry key="css" value="26" />
           <entry key="gitignore" value="75" />
-          <entry key="html" value="433" />
-          <entry key="md" value="188" />
+          <entry key="html" value="434" />
+          <entry key="md" value="201" />
           <entry key="py" value="3288" />
-          <entry key="txt" value="180" />
+          <entry key="txt" value="253" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="26" />
-          <entry key="HTML" value="433" />
-          <entry key="Markdown" value="188" />
-          <entry key="PLAIN_TEXT" value="255" />
+          <entry key="HTML" value="434" />
+          <entry key="Markdown" value="201" />
+          <entry key="PLAIN_TEXT" value="328" />
           <entry key="Python" value="3288" />
         </counts>
       </usages-collector>
@@ -87,7 +84,6 @@
               <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#p#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <first_editor relative-caret-position="527">
+                <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -371,7 +367,28 @@
       <option name="project" value="LOCAL" />
       <updated>1582985473674</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made gui2.exe to have a simple way to play on Windows">
+      <created>1582989716172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582989716172</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Made gui2.exe to have a simple way to play on Windows fix">
+      <created>1582989771570</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582989771570</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated website">
+      <created>1582989863386</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582989863386</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -407,7 +424,10 @@
     <MESSAGE value="Added index.css" />
     <MESSAGE value="Linked index.css to index.html" />
     <MESSAGE value="Edited website and README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited website and README.md" />
+    <MESSAGE value="Made gui2.exe to have a simple way to play on Windows" />
+    <MESSAGE value="Made gui2.exe to have a simple way to play on Windows fix" />
+    <MESSAGE value="Updated website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated website" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/__init__.py">
@@ -446,8 +466,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <first_editor relative-caret-position="527">
+            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           </first_editor>
           <second_editor />
         </state>
@@ -459,7 +479,6 @@
           <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#p#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
