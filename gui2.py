@@ -1,6 +1,5 @@
 from evolution2 import *
 import pygame
-import math
 import time
 
 # pygame setup
@@ -13,8 +12,10 @@ pygame.display.set_caption("evolution-simulator-2")
 
 # simulation setup
 population = Population()
-individual = Individual(population, 10, (WIDTH//2, HEIGHT//2), 50, 20)
-population_list = [individual]
+population_list = []
+for i in range(STARTING_NUMBER_OF_INDIVIDUALS):
+    individual = Individual(population, INDIVIDUAL_SIZE, (random.randint(1, WIDTH), random.randint(1, HEIGHT)), 50, 20, 10, None)
+    population_list.append(individual)
 population.setupPopulation(population_list)
 
 # mainloop
@@ -25,7 +26,7 @@ while running:
             if event.type == pygame.QUIT:
                 running = False
 
-    time.sleep(1)
+    time.sleep(0.5)
 
     # simulator stuff
     population.newDay()
@@ -37,12 +38,13 @@ while running:
     for individual in population.population:
         i = population.population.index(individual)
 
-        pygame.draw.circle(surface, (255, 0, 0, 160), population.population[i].location, population.population[i].vision_distance, 1)
-        pygame.draw.circle(surface, (0, 0, 255, 210), population.population[i].location, population.population[i].eating_distance, 1)
-        pygame.draw.circle(surface, (0, 0, 0), population.population[i].location, population.population[i].size)
+        pygame.draw.circle(surface, (255, 0, 0, 160), individual.location, individual.vision_distance, 2)
+        pygame.draw.circle(surface, (0, 0, 255, 210), individual.location, individual.eating_distance, 2)
+        pygame.draw.circle(surface, (0, 0, 0), individual.location, individual.size)
 
     # draw Foods
     for food in population.food_producer.food_list:
+        food.moved_to = 0
         if food.colour == (0, 0, 0) and food.nutrition > 0:
             pygame.draw.circle(surface, food.colour, food.location, FOOD_SIZE)
 
@@ -51,7 +53,7 @@ while running:
 
     # draw text above Individual
     for individual in population.population:
-        textSurface = myFont.render(str(individual.energy), False, (0, 0, 0))
+        textSurface = myFont.render(str(round(individual.energy, 1)), False, (0, 0, 0))
         screen.blit(textSurface, (individual.location[0] - 5, individual.location[1] - 50))
 
     pygame.display.update() # updates window
