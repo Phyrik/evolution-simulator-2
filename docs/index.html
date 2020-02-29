@@ -5,5 +5,32 @@
 </head>
 <body>
     <h1>evolution-simulator-2</h1>
+
+    <p>The sequel to <a href="https://github.com/Phyrik/evolution-simulator">evolution-simulator.</a></p>
+
+    <p>evolution-simulator-2 is an evolution simulator that simulates circular creatures.</p>
+
+    <p>Feel free to leave suggestion in issues under the enhancement tag!</p>
+
+    <h2>Setup</h2>
+
+    <p>To play evolution-simulator-2 you must have <a href="https://python.org/downloads">Python 3</a> and Pygame installed. I am working on a way to make the game run wihtout these dependencies and as an executable.</p>
+
+    <p>Download the repository's zip file and extract it. Open a terminal/command prompt and go to thr extracted folder. Run gui2.py in the terminal/command prompt with:</p>
+
+    <p style="font-family: monospace">python gui2.py</p>
+
+    <h2>Gameplay</h2>
+
+    <p>In evolution-simulator-2 you observe circular creatures try to navigate their life. They must eat food to gather energy, reproduce to pass on their genes, and kill others before they kill them.</p>
+
+    <p>On the first day 10 creatures are created.</p>
+
+    <p>Each big black dot is a creature or individual. Around each individual there are two rings. A blue one and a red one. The smaller blue ring is the <b>eating range</b> of that creature. Any food, a small black dot that gives the individual +1 energy, that exists within this ring is able to be eaten by the individual. This will happen unless another individual eats it first. The bigger red ring is the <b>vision range</b>. This is how far the individual can see and travel each turn. Each individual will go to where it thinks is the best position for it to be the next day.</p>
+
+    <p>The black number above each individual represents its <b>energy</b>. The amount of energy an individual has determines how much it can reproduce or kill each turn (<b>individuals do NOT require energy to eat food or move BUT 0.1 energy is taken off each individual each turn</b>).</p>
+
+    <p>Each individual needs and uses 4 energy to reproduce, and 7 to kill.</p>
+
 </body>
 </html>
