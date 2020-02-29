@@ -5,12 +5,14 @@ import math
 WIDTH = 1000
 HEIGHT = 500
 FOOD_SIZE = 5
-FOOD_PER_DAY = 100
 REPRODUCE_ENERGY = 4
 KILL_ENERGY = 7
 MOVING_ENERGY = 1
 INDIVIDUAL_SIZE = 10
-STARTING_NUMBER_OF_INDIVIDUALS = 10
+
+STARTING_NUMBER_OF_INDIVIDUALS = int(input("How many creatures do you want to spawn on the first day? "))
+FOOD_PER_DAY = int(input("How many pieces of food do you want to spawn each day? "))
+MUTATING_CHANCE = int(input("What percentage chance do you want there to be of a creature's genes to mutate when it reproduces? "))
 
 def distanceBetween(pos_1, pos_2):
     return math.sqrt((pos_2[0] - pos_1[0])**2 + (pos_2[1] - pos_1[1])**2)
@@ -99,15 +101,15 @@ class Individual:  # Individual class
     def reproduce(self):
         '''makes Individual repoduce with either the same or mutated genes'''
         if random.randint(1, 100) <= self.mutating_chance:
-            self.offspring_vision_distance = self.vision_distance + random.randint(-10, 10)
+            self.offspring_vision_distance = abs(self.vision_distance + random.randint(-20, 20))
         else:
             self.offspring_vision_distance = self.vision_distance
         if random.randint(1, 100) <= self.mutating_chance:
-            self.offspring_eating_distance = self.eating_distance + random.randint(-10, 10)
+            self.offspring_eating_distance = abs(self.eating_distance + random.randint(-20, 20))
         else:
             self.offspring_eating_distance = self.eating_distance
         if random.randint(1, 100) <= self.mutating_chance:
-            self.offspring_mutating_chance = self.mutating_chance + random.randint(-10, 10)
+            self.offspring_mutating_chance = abs(self.mutating_chance + random.randint(-20, 20))
         else:
             self.offspring_mutating_chance = self.mutating_chance
 

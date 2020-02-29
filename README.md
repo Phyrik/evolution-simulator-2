@@ -8,7 +8,11 @@ Feel free to leave suggestion in issues under the enhancement tag!
 
 ## Setup
 
-To play evolution-simulator-2 you must have [Python 3](https://python.org/downloads) and Pygame installed. I am working on a way to make the game run wihtout these dependencies and as an executable.
+To play evolution-simulator-2 on a Windows PC simply download the ZIP file and run:
+
+`gui2.exe`
+
+To play evolution-simulator-2 on a Mac or Linux machine you must have [Python 3](https://python.org/downloads) and Pygame installed. I am working on a way to make the game run wihtout these dependencies and as an executable.
 
 Download the repository's zip file and extract it. Open a terminal/command prompt and go to thr extracted folder. Run gui2.py in the terminal/command prompt with:
 

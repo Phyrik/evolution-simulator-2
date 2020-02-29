@@ -14,7 +14,7 @@ pygame.display.set_caption("evolution-simulator-2")
 population = Population()
 population_list = []
 for i in range(STARTING_NUMBER_OF_INDIVIDUALS):
-    individual = Individual(population, INDIVIDUAL_SIZE, (random.randint(1, WIDTH), random.randint(1, HEIGHT)), 50, 20, 10, None)
+    individual = Individual(population, INDIVIDUAL_SIZE, (random.randint(1, WIDTH), random.randint(1, HEIGHT)), 50, 20, MUTATING_CHANCE, None)
     population_list.append(individual)
 population.setupPopulation(population_list)
 
