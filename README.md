@@ -8,7 +8,7 @@ Feel free to leave suggestion in issues under the enhancement tag!
 
 ## Setup
 
-To play evolution-simulator-2 on a Windows PC simply download the ZIP file and run:
+To play evolution-simulator-2 on a Windows PC simply download the ZIP file, extract it, and run:
 
 `gui2.exe`
 
