@@ -6,6 +6,12 @@ evolution-simulator-2 is an evolution simulator that simulates (wow the word sim
 
 Feel free to leave suggestion in issues under the enhancement tag!
 
+## Setup
+
+To play evolution-simulator-2 you must have [Python 3](https://python.org/downloads) and Pygame installed. I am working on a way to make the game run wihtout these dependencies and as an executable.
+
+Download the repository's zip file and extract it. Open a terminal/command prompt and go to thr extracted folder. Run gui2.py in the terminal/command prompt with `python gui2.py`
+
 ## Gameplay
 
 In evolution-simulator-2 you observe circular creatures try to navigate their life. They must eat food to gather energy, reproduce to pass on their genes, and kill others before they kill them.
