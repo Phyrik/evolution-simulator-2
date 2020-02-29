@@ -38,8 +38,12 @@ while running:
     for individual in population.population:
         i = population.population.index(individual)
 
-        pygame.draw.circle(surface, (255, 0, 0, 160), individual.location, individual.vision_distance, 2)
-        pygame.draw.circle(surface, (0, 0, 255, 210), individual.location, individual.eating_distance, 2)
+        if individual.vision_distance < 2:
+            individual.vision_distance = 2
+        pygame.draw.circle(surface, (255, 0, 0, 160), individual.location, individual.vision_distance, 1)
+        if individual.eating_distance < 2:
+            individual.eating_distance = 2
+        pygame.draw.circle(surface, (0, 0, 255, 210), individual.location, individual.eating_distance, 1)
         pygame.draw.circle(surface, (0, 0, 0), individual.location, individual.size)
 
     # draw Foods
