@@ -1,3 +1,5 @@
+# The third edition of this simulator is available [here](https://github.com/Phyrik/evolution-simulator-3)!
+
 # evolution-simulator-2
 
 The sequel to [evolution-simulator](https://github.com/Phyrik/evolution-simulator).
